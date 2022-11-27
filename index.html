@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <h2>Sign-up for our 30-day trial. No creadit card required.</h2>
+      </header>
+      <main class="card">
+        <section id="display-section">
+          <div class="page-views">
+            <span id="pageViews">100K</span> &nbsp; PAGEVIEWS
+          </div>
+          <div class="slider-container">
+            <input type="range" id="" class="slider" min="" max="" value="" />
+          </div>
+          <div class="pricing-container">
+            <div class="per-month">
+              <span id="perMonth">$16.00</span> &nbsp; / month
+            </div>
+            <div class="per-year">
+              <span id="perYear">$123</span> &nbsp; / year
+            </div>
+          </div>
+        </section>
+        <section id="toggle-section">
+          <div class="sm-text">Monthly Billing</div>
+          <div class="toggle-container">
+            <div class="toggle-btn right"></div>
+          </div>
+          <div class="sm-text">
+            Yearly Billing <span class="discount-tag">-25%</span>
+          </div>
+        </section>
+        <div class="separator"></div>
+        <section id="bottom-section">
+          <div>
+            <div class="sm-text">
+              <img src="./images/icon-check.svg" alt="check icon" /> &nbsp;
+              Unlimited Websites
+            </div>
+            <div class="sm-text">
+              <img src="./images/icon-check.svg" alt="check icon" /> &nbsp; 100%
+              data ownership
+            </div>
+            <div class="sm-text">
+              <img src="./images/icon-check.svg" alt="check icon" /> &nbsp;
+              Email reports
+            </div>
+          </div>
+          <div>
+            <button class="start-trial-btn">Start my trial</button>
+          </div>
+        </section>
+      </main>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://twitter.com/sushilb607">Sushilkumar Bodade</a>.
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
