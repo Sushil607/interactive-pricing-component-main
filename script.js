@@ -5,27 +5,28 @@
 const slider = document.getElementById("myRange");
 const pageViews = document.getElementById("pageViews");
 const perMonth = document.getElementById("perMonth");
-
-let billingMode = "monthly";
+const perYearContainer = document.getElementsByClassName("per-year")[0];
+const perYear = document.getElementById("perYear");
 
 // Initial value
 pageViews.innerHTML = "100K";
+let billingMode = "monthly";
 
 slider.addEventListener("change", changePageViews);
 
 function changePageViews() {
   const pageViewsArray = ["10K", "50K", "100K", "500K", "1M"];
-  const monthlyModeBilling = ["$8", "$12", "$16", "$24", "$36"];
-  const yearlyModeBilling = ["$6", "$9", "$12", "$18", "$27"];
+  const monthlyModeBilling = ["$8.00", "$12.00", "$16.00", "$24.00", "$36.00"];
+  const yearlyModeBilling = ["$6.00", "$9.00", "$12.00", "$18.00", "$27.00"];
   pageViews.innerHTML = pageViewsArray[slider.value - 1];
   if (billingMode === "monthly") {
-    console.log("monthly");
     perMonth.innerHTML = monthlyModeBilling[slider.value - 1];
     return;
   }
   if (billingMode === "yearly") {
-    console.log("yearly");
+    const perYearBilling = ["$72", "$108", "$144", "$216", "$324"];
     perMonth.innerHTML = yearlyModeBilling[slider.value - 1];
+    perYear.innerHTML = perYearBilling[slider.value - 1];
     return;
   }
 }
@@ -54,12 +55,14 @@ toggleContainer.addEventListener("click", () => {
   // Change billing mode based on class
   if (toggleBtn.classList.contains("left")) {
     billingMode = "monthly";
+    perYearContainer.style.cssText = "display:none";
     changePageViews();
     return;
   }
 
   if (toggleBtn.classList.contains("right")) {
     billingMode = "yearly";
+    perYearContainer.style.cssText = "display:flex";
     changePageViews();
     return;
   }
