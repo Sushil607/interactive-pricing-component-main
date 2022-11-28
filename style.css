@@ -230,6 +230,7 @@ section{
     background-position: center;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
     background-color: hsl(174, 86%, 45%);
     cursor: pointer;
     box-shadow: 0 14px 10px 0 hsl(174, 77%, 80%);
@@ -282,6 +283,9 @@ section{
 }
 
 @media(min-width:1024px){
+    body{
+        font-size: 20px;
+    }
     .container{
         width: 35%;
     }
