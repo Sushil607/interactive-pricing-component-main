@@ -243,7 +243,7 @@ section{
 @media(min-width:768px){
     .container{
         width: 50%;
-        margin: 5rem auto;
+        margin: 2rem auto;
     }
 
     .page-views{
