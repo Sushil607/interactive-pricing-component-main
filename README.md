@@ -46,4 +46,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Sushil607](https://www.frontendmentor.io/profile/Sushil607)
-- Twitter - [@sushilb607](https://twitter.com/sushilb607)
+- Twitter - [@SushilCodes](https://twitter.com/SushilCodes)
